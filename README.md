@@ -48,6 +48,18 @@ npm install
 npm run dev
 ```
 
+## Deploy na Vercel com Supabase
+
+Ao importar o projeto na Vercel, use:
+
+- `Framework Preset`: Next.js
+- `Root Directory`: `web`
+- `Build Command`: `npm run build`
+
+A integracao da Vercel com Supabase deve disponibilizar `NEXT_PUBLIC_SUPABASE_URL` e uma chave publica, normalmente `NEXT_PUBLIC_SUPABASE_ANON_KEY` ou `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`. O frontend aceita as duas.
+
+Para o banco ficar pronto, rode o arquivo `supabase/schema.sql` no SQL Editor do Supabase. A chave `SUPABASE_SERVICE_ROLE_KEY` deve ficar somente na automacao Python/local, nunca exposta no frontend.
+
 ## Como rodar a ingestao
 
 Crie um ambiente virtual e instale as dependencias:
