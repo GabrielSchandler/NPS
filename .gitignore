@@ -1,0 +1,14 @@
+web/.next/
+web/node_modules/
+web/dev.log
+web/dev.err
+web/dev.out
+node_modules/
+.env
+.env.local
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
