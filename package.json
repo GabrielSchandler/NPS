@@ -1,0 +1,11 @@
+{
+  "name": "nps",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "cd web && npm run build"
+  },
+  "dependencies": {
+    "next": "^15.3.0"
+  }
+}
